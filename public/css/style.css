@@ -153,7 +153,7 @@
     font-size: 24px;
   }
   
-  /* index ================================ */
+  /* main table ================================ */
   .table-head {
     display: flex;
     background-color: #b7cadc;
@@ -164,18 +164,43 @@
     color: #ffffff;
   }
   
+  .price-column {
+    float: right;
+    margin: 0 50px;
+  }
+
   .id-column {
     width: 72px;
+    padding: 0 20px;
     text-align: center;
   }
   
-  .name-column {
+  .item-column {
+    width:  500px;
+    margin: 0 20px;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  .price-column div{
     width: 72px;
-    margin-left: 20px;
+    margin: 0 20px;
+    float: right;
+  }
+
+  .qty-column span{
+    text-align: left;
+  }
+
+  .qty-column {
+    width: 72px;
+    padding: 0 20px;
+    text-align: center;
   }
   
   .table-body {
     background-color: #ffffff;
+    width: 720px;
   }
   
   .table-body li {
