@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/" class="header-logo">Transaksi</a>
+    </header>
+    <div class="container">
+        <div class="container-header">
+            <h1>Daftar Transaksi</h1>
+        </div>
+        <div class="index-table-wrapper">
+            <a href="/tf-produk" class="index-button">Kirim ke Produk</a> 
+            <div class="table-head">
+                <span class="id-column">Order Number</span>
+                <span>item</span>
+                <span>SKU</span>
+                <span>Item name</span>
+            </div>
+            <ul class="table-body">
+                <% items.forEach((item) => { %>
+                    <li>
+                        <div class="item-data">
+                            <span class="id-column"><%= item.orderNumber %></span>
+                            
+                        </div>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

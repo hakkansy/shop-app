@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/" class="header-logo">Produk</a>
+    </header>
+    <div class="container">
+        <div class="container-header">
+            <h1>Daftar Produk</h1>
+        </div>
+        <div class="index-table-wrapper">
+            <div class="table-head">
+                <span class="id-column">No</span>
+                <span>Item</span>
+                <span>qty</span>
+                <span>price</span>
+            </div>
+            <ul class="table-body">
+                <% produk.forEach((item) => { %>
+                    <li>
+                        <div class="item-data">
+                            <span class="id-column"><%= item.No %></span>
+                            <span class="name-column"><%= item.Item %></span>
+                            <span class="name-column"><%= item.qty %></span>
+                            <span class="name-column"><%= item.price %></span>
+                        </div>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
