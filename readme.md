@@ -17,7 +17,7 @@ $ npm update
 # Run Program
 Untuk menjalankan program, ketik ini di CLI
 ```
-npm run start:dev
+$ npm run start:dev
 ```
 
 # Built With
