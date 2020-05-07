@@ -17,7 +17,7 @@ $ npm update
 # Run Program
 Untuk menjalankan program, ketik ini di CLI
 ```
-npm run start:dev
+$ npm run start:dev
 ```
 
 # Built With
@@ -26,7 +26,7 @@ npm run start:dev
 * VS Code - The IDE 
 
 # License
-This project is lincensed under MIT License
+This project is lincensed under Apache-2 license
 
 # Acknowledgments
 * My lecturer
