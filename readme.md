@@ -3,11 +3,11 @@ Aplikasi web-based yang menampilkan penjualan terbanyak
 ![Capture](https://github.com/Andi-IM/shop-app/blob/master/Capture.PNG?raw=true)
 
 # Getting started
-sebelum menjalankan Aplikasi ini diharapkan sudah menginstall [Node.js](https://nodejs.org/en/download/),
+Sebelum menjalankan Aplikasi ini diharapkan sudah menginstall [Node.js](https://nodejs.org/en/download/),
 [MySQL](https://dev.mysql.com/downloads/installer/) dan Git di dalamnya.
 
 ## Prasyarat
-untuk sebelum run aplikasi ini, lakukan langkah-langkah berikut :
+Sebelum menjalankan aplikasi ini, lakukan langkah-langkah berikut :
 * Lakukan import database untuk mengambil data (file database ada di dalam project bernama [toko.sql](https://github.com/Andi-IM/shop-app/blob/master/toko.sql)).
 * Lakukan cloning dengan perintah seperti di bawah :
 ```
