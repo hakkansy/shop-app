@@ -15,24 +15,28 @@
         <div class="container-header">
             <h1>Daftar Transaksi</h1>
         </div>
-        <div class="index-table-wrapper">
-            <a href="/tf-produk" class="index-button">Kirim ke Produk</a> 
-            <div class="table-head">
-                <span class="id-column">Order Number</span>
-                <span>item</span>
-                <span>SKU</span>
-                <span>Item name</span>
-            </div>
-            <ul class="table-body">
+        <div class="index-table-wrapper"> 
+            <table class="main-table">
+                <tr class="table-head">
+                    <th class="id-column">Order Number</th>
+                    <th class="item-column">Order Status</th>
+                    <th class="qty-column">item</th>
+                    <th class="price-column">Item Name</th>
+                    <th class="price-column">qty</th>
+                    <th class="price-column">price</th>
+                </tr>
+            
                 <% items.forEach((item) => { %>
-                    <li>
-                        <div class="item-data">
-                            <span class="id-column"><%= item.orderNumber %></span>
-                            
-                        </div>
-                    </li>
+                    <tr class="table-body">
+                            <td class="id-column"><%= item.orderNumber %></td>
+                            <td class="item-column"><%= item.orderStatus %></td>
+                            <td class="qty-column"><%= item.item %></td>
+                            <td class="price-column"><%= item.ItemName %></td>
+                            <td class="price-column"><%= item.qty %></td>
+                            <td class="price-column"><%= item.itemCost %></td>
+                    </tr>
                 <% }) %>
-            </ul>
+            </table>
         </div>
     </div>
 </body>

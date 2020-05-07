@@ -16,16 +16,15 @@
             <h1>Daftar Produk</h1>
         </div>
         <div class="index-table-wrapper">
-            <div class="table-head">
-                <span class="id-column">No</span>
-                <span class="item-column">Item</span>
-                <span class="qty-column">qty</span>
-                <span class="price-column">price</span>
-            </div>
-            <table class="table-body">
+            <table class="main-table">
+                <tr class="table-head">
+                    <th class="item-column">Item</th>
+                    <th class="qty-column">qty</th>
+                    <th class="price-column">price</th>
+                </tr>
+            
                 <% produk.forEach((item) => { %>
-                    <tr>
-                            <td class="id-column"><%= item.No %></td>
+                    <tr class="table-body">
                             <td class="item-column"><%= item.Item %></td>
                             <td class="qty-column"><%= item.qty %></td>
                             <td class="price-column"><%= item.price %></td>

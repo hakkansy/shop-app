@@ -28,7 +28,7 @@ app.get('/', (req,res) => {
 
 app.get('/produk', (req,res) => {
     connection.query(
-        'SELECT * FROM list',
+        'SELECT * FROM list ORDER BY qty DESC',
         (error, results) => {
             res.render('produk.ejs', {produk:results});
         }
@@ -41,7 +41,7 @@ app.post('/tf-produk', (req, res) => {
         'INSERT INTO list(Item, qty, price) SELECT (DISTINCT(itemName), SUM(qty), itemCost) FROM orders',
       (error, results) => {
         connection.query(
-          'SELECT * FROM list',
+          'SELECT * FROM list ORDER BY qty DESC',
           (error, results) => {
             res.render('produk.ejs', {items: results});
           }
